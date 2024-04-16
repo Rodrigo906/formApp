@@ -34,4 +34,8 @@ export class RegisterPageComponent {
     return this.validatorsService.isValidField( this.myForm, field );
   }
 
+  onSubmit() {
+    this.myForm.markAllAsTouched();
+  }
+
 }
